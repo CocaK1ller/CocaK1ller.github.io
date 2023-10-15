@@ -3,61 +3,20 @@
   <entry>
     <title>Hello World</title>
     <url>/2023/10/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>Welcome to <a class="link" href="https://hexo.io/">Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link" href="https://hexo.io/docs/">documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" href="https://hexo.io/docs/troubleshooting.html">troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link" href="https://github.com/hexojs/hexo/issues">GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a class="link" href="https://hexo.io/docs/writing.html">Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a class="link" href="https://hexo.io/docs/server.html">Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a class="link" href="https://hexo.io/docs/generating.html">Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>More info: <a class="link" href="https://hexo.io/docs/one-command-deployment.html">Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>博客</title>
-    <url>/2022/10/02/fsdfsdf/</url>
-    <content><![CDATA[<p>为什么说脚本语言适合网页开发、前端开发？</p>
-<p>ChatGPT</p>
-<p>脚本语言通常被认为适合网页开发和前端开发的原因有以下几点：</p>
-<ol>
-<li>解释执行：脚本语言是一种解释执行的语言，这意味着代码不需要编译成二进制文件，而是可以直接由浏览器解释执行。这使得开发过程更加灵活，因为您可以轻松编辑、保存和刷新浏览器以查看更改，无需重新编译代码。</li>
-<li>客户端脚本：脚本语言如JavaScript通常用于编写客户端脚本，这是在用户的浏览器上运行的脚本。这允许网页开发者为网页添加交互性和动态功能，使用户能够与网页进行实时互动，而无需在服务器上执行复杂的操作。</li>
-<li>强大的DOM操作：脚本语言具有强大的文档对象模型（Document Object Model，DOM）操作能力，可以通过JavaScript等脚本语言轻松地访问和操纵网页的内容和结构。这允许开发者创建动态网页，根据用户的交互实时更新页面内容。</li>
-<li>跨平台兼容性：脚本语言通常是跨平台的，可以在不同的浏览器和操作系统上运行。这使得网页开发者能够编写一次代码，然后确保其在各种浏览器上正常工作，而无需为不同平台编写不同的代码。</li>
-<li>大量的开发工具和框架：脚本语言的网页开发生态系统非常丰富，有大量的开发工具和框架可供选择，例如React、Angular、Vue.js等，这些工具和框架可以加速网页开发，提供复用性的组件和功能。</li>
-<li>快速原型开发：脚本语言使得快速原型开发变得更加容易，开发者可以快速创建、测试和修改网页，以满足用户需求的变化。</li>
-</ol>
-<p>总的来说，脚本语言在网页开发和前端开发中的灵活性、互动性和跨平台兼容性使其成为理想的选择。前端开发者通常使用脚本语言来构建用户友好的、动态的网页应用程序，为用户提供更好的互动体验。</p>
-<blockquote>
-<p>介绍一下DOM</p>
-<p>ChatGPT</p>
-<p>文档对象模型（Document Object Model，简称DOM）是一种用于处理和表示HTML和XML文档结构的编程接口。DOM允许开发者通过编程方式访问、操作和修改文档的内容、结构和样式。它是网页开发中非常重要的概念，特别在前端开发中经常用到。</p>
-<p>以下是有关DOM的一些关键信息：</p>
-<ol>
-<li>层次结构：DOM以树形结构表示文档，每个元素、属性和文本都被表示为一个节点，这些节点按照其在文档中的层次结构排列。文档的根节点通常是**<code>&lt;html&gt;</code><strong>元素，而其子节点包括</strong><code>&lt;head&gt;</code><strong>和</strong><code>&lt;body&gt;</code>**等。</li>
-<li>访问和操作：通过DOM，开发者可以使用编程语言（通常是JavaScript）访问文档中的任何元素或节点，包括元素的属性、文本内容、子节点等。这使得开发者可以实现动态网页效果，例如在用户与网页互动时更新内容或样式。</li>
-<li>方法和属性：DOM提供了一组方法和属性，用于操作文档。开发者可以使用这些方法和属性来创建、删除、移动和修改节点，更改元素的样式，处理事件，以及执行其他各种操作。</li>
-<li>事件处理：DOM也用于处理用户交互和事件。开发者可以附加事件处理程序到文档元素，以便在用户执行特定操作时触发相应的事件，例如点击、鼠标悬停、键盘输入等。</li>
-<li>跨平台兼容性：DOM是与编程语言无关的接口，但通常与JavaScript一起使用。这意味着它可以在不同浏览器和操作系统上使用，因为大多数现代浏览器都支持DOM标准。这有助于实现跨浏览器兼容性。</li>
-</ol>
-<p>总的来说，DOM是前端开发的核心概念之一，它使开发者可以创建交互性和动态性的网页应用程序，以及通过脚本语言（如JavaScript）与网页的内容和结构进行交互。通过DOM，开发者可以访问和操纵网页的各个部分，从而创建丰富的用户体验。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>C++</category>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Demo</tag>
-        <tag>Hexo</tag>
-        <tag>Hexo Theme</tag>
-        <tag>Hexo Theme Redefine</tag>
-      </tags>
   </entry>
   <entry>
     <title>博客</title>
@@ -99,5 +58,390 @@
         <tag>Hexo Theme</tag>
         <tag>Hexo Theme Redefine</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>投光物</title>
+    <url>/2023/10/14/OpenGL/%E6%8A%95%E5%85%89%E7%89%A9/</url>
+    <content><![CDATA[<h2 id="类别"><a href="#类别" class="headerlink" title="类别"></a>类别</h2><h3 id="平行光"><a href="#平行光" class="headerlink" title="平行光"></a>平行光</h3><p>光源位置→光线方向向量</p>
+<ul>
+<li>需要取反</li>
+</ul>
+<p><code>vec lightDir =  -normalize(lightDir - FragDir)</code></p>
+<h3 id="点光源"><a href="#点光源" class="headerlink" title="点光源"></a>点光源</h3><ul>
+<li>光线随距离衰减</li>
+</ul>
+<p>$$<br>F_{att}&#x3D;\frac{1.0}{K_c+K_l<em>d+K_q</em>d^2}<br>$$</p>
+<ul>
+<li><p>常数项一般设置为1</p>
+<table>
+<thead>
+<tr>
+<th>距离</th>
+<th>常数项</th>
+<th>一次项</th>
+<th>二次项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>7</td>
+<td>1.0</td>
+<td>0.7</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1.0</td>
+<td>0.35</td>
+<td>0.44</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1.0</td>
+<td>0.22</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>32</td>
+<td>1.0</td>
+<td>0.14</td>
+<td>0.07</td>
+</tr>
+<tr>
+<td>50</td>
+<td>1.0</td>
+<td>0.09</td>
+<td>0.032</td>
+</tr>
+<tr>
+<td>65</td>
+<td>1.0</td>
+<td>0.07</td>
+<td>0.017</td>
+</tr>
+<tr>
+<td>100</td>
+<td>1.0</td>
+<td>0.045</td>
+<td>0.0075</td>
+</tr>
+<tr>
+<td>160</td>
+<td>1.0</td>
+<td>0.027</td>
+<td>0.0028</td>
+</tr>
+<tr>
+<td>200</td>
+<td>1.0</td>
+<td>0.022</td>
+<td>0.0019</td>
+</tr>
+<tr>
+<td>325</td>
+<td>1.0</td>
+<td>0.014</td>
+<td>0.0007</td>
+</tr>
+<tr>
+<td>600</td>
+<td>1.0</td>
+<td>0.007</td>
+<td>0.0002</td>
+</tr>
+<tr>
+<td>3250</td>
+<td>1.0</td>
+<td>0.0014</td>
+<td>0.000007</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">Light</span> &#123;</span><br><span class="line">	vec3 position;</span><br><span class="line">	vec3 ambient;</span><br><span class="line">	vec3 diffuse;</span><br><span class="line">	vec3 specular;</span><br><span class="line"></span><br><span class="line">	<span class="type">float</span> constant;</span><br><span class="line">	<span class="type">float</span> linear;</span><br><span class="line">	<span class="type">float</span> quadratic;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="聚光"><a href="#聚光" class="headerlink" title="聚光"></a>聚光</h3><ul>
+<li><p>判断是否在照射范围内</p>
+  <div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">LightDir = lightDir - FragDir <span class="comment">// 希望向量指向光源</span></span><br><span class="line">theta = <span class="built_in">dot</span>(<span class="built_in">normalize</span>(FragDir), <span class="built_in">normalize</span>(-lightDir))</span><br><span class="line"><span class="comment">// Alpha in (0, 90)</span></span><br><span class="line"><span class="keyword">if</span> (light.cutOff &lt; theta) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">else</span> color = <span class="built_in">vec4</span>(light.ambient * <span class="built_in">vec3</span>(<span class="built_in">texture</span>(material.diffuse, TexCoords)), <span class="number">1.0</span>);</span><br></pre></td></tr></table></figure></div>
+<ul>
+<li>反余弦的计算开销很大，所以将两个角度都用余弦值表示</li>
+</ul>
+</li>
+<li><p>手电筒</p>
+<p>  平滑&#x2F;软化边缘</p>
+<p>  内圆锥 + 外圆锥<br>  余弦值的插值</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>OpenGL</category>
+        <category>光照</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>什么是计算机网络</title>
+    <url>/2023/10/14/Network/%E4%BB%80%E4%B9%88%E6%98%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+    <content><![CDATA[<p>计算机网络 &#x3D; 通信技术 + 计算机技术</p>
+<p>一种特殊的通信网络：信源和信宿通常是计算机，信息是数字化的</p>
+<img lazyload src="/images/loading.svg" data-src="/2023/10/14/Network/%E4%BB%80%E4%B9%88%E6%98%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/Untitled1.png" class>
+
+
+
+<ul>
+<li><p>互联的、自治的计算机集合</p>
+<ul>
+<li>自治：无主从关系</li>
+<li>互联：互联互通<ul>
+<li>通信链路：无线信号&#x2F;电、光纤、铜缆、卫星</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>距离远、数量大如何保证互联</p>
+<ul>
+<li>直接链路连接不可行</li>
+</ul>
+</li>
+<li><p>通过交换网络互联主机</p>
+</li>
+<li><p>交换节点</p>
+<ul>
+<li>计算机网络中指<code>路由器</code>或<code>交换机</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="什么是Internet——组成细节"><a href="#什么是Internet——组成细节" class="headerlink" title="什么是Internet——组成细节"></a>什么是Internet——组成细节</h3><ul>
+<li>互联网是最大的计算机网络</li>
+</ul>
+
+
+
+
+<ul>
+<li>数以百万计的互联的计算设备集合<ul>
+<li>主机(hosts) &#x3D; 端系统(end system) | PC，服务器，无线笔记本</li>
+<li>运行各种网络服务</li>
+</ul>
+</li>
+<li><h2 id="分组交换：转发分组（数据包）-路由器（routers）和交换机（switches）"><a href="#分组交换：转发分组（数据包）-路由器（routers）和交换机（switches）" class="headerlink" title="分组交换：转发分组（数据包）  - 路由器（routers）和交换机（switches）"></a>分组交换：转发分组（数据包）<br>  - 路由器（routers）和交换机（switches）</h2></li>
+</ul>
+<h3 id="服务角度"><a href="#服务角度" class="headerlink" title="服务角度"></a>服务角度</h3><ul>
+<li>为网络应用提供通信服务的通信基础设施</li>
+<li>为网络应用提供应用编程接口（API）<ul>
+<li>支持app连接internet，发送&#x2F;接收数据</li>
+</ul>
+</li>
+</ul>
+<p><strong>仅有硬件连接，Internet能否顺畅运行？能保证应用数据有序交付吗？</strong></p>
+<ul>
+<li>NO！还需要**<code>协议</code>**</li>
+</ul>
+<h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><blockquote>
+<p>学习网络的重要内容之一<br>网络创新的表现形式之一</p>
+</blockquote>
+<blockquote>
+<p>协议是计算机网络有序运行的重要保证</p>
+</blockquote>
+<ul>
+<li>硬件是计算机网络的基础</li>
+<li>计算机网络中的数据交换必须遵守事先约定好的规则</li>
+<li>如同交通规则</li>
+</ul>
+<p>发送特定消息</p>
+<p>采取特定动作</p>
+<blockquote>
+<p>网络协议（Network Protocol）简称为协议，是为进行网络中的数据交换而建立的规则、标准或约定</p>
+</blockquote>
+<blockquote>
+<p>协议规定了通信实体之间所交换的信息的<code>格式、意义、顺序</code>以及针对收到信息或发生的事件所采取的“<code>动作</code>“（action）</p>
+</blockquote>
+<blockquote>
+<p>协议规范了网络中所有信息发送和接受过程</p>
+</blockquote>
+<h3 id="三要素"><a href="#三要素" class="headerlink" title="三要素"></a>三要素</h3><ul>
+<li>语法（Syntax）&#x2F;信件<ul>
+<li>数据与控制信息的结构或格式</li>
+<li>（对于底层信息）信号电平</li>
+</ul>
+</li>
+<li>语义（Semantics）&#x2F;信封<ul>
+<li>需要发出何种控制信息</li>
+<li>完成何种动作以及做出何种响应</li>
+<li>差错控制</li>
+</ul>
+</li>
+<li>时序（Timing）<ul>
+<li>时间顺序</li>
+<li>速度匹配</li>
+</ul>
+</li>
+</ul>
+<h2 id="计算机网络结构"><a href="#计算机网络结构" class="headerlink" title="计算机网络结构"></a>计算机网络结构</h2><ul>
+<li><p>网络边缘</p>
+<ul>
+<li>主机</li>
+<li>网络应用</li>
+</ul>
+</li>
+<li><p>接入网络，物理介质</p>
+<ul>
+<li>有线&#x2F;无线</li>
+</ul>
+</li>
+<li><p>网络核心（核心网络）</p>
+<ul>
+<li>互联的路由器（或分组转发设备）</li>
+<li>网络之网络</li>
+</ul>
+</li>
+<li><p>主机（端网络）</p>
+</li>
+<li><p>客户&#x2F;服务器应用模型：</p>
+<ul>
+<li>谁主动发起通信，谁就是客户</li>
+<li>客户和客户之间不会通信</li>
+</ul>
+</li>
+<li><p>对等（peer-peer, P2P）应用模型</p>
+<ul>
+<li>五（或不仅依赖）专用服务器</li>
+<li>通信在对等实体之间进行</li>
+<li>QQ，Skype</li>
+</ul>
+</li>
+<li><p>接入网络</p>
+<ul>
+<li><p>可能是一个复杂的网络，或简单的通信链路</p>
+</li>
+<li><p>解决的问题：如何将网络边缘接入核心网（边缘路由器）</p>
+<ul>
+<li>接入网络（家用、机构、移动……)</li>
+</ul>
+</li>
+<li><p>用户关心的是：</p>
+<ul>
+<li>带宽：数据传输速率（而不是信号最高最低之差）</li>
+<li>共享&#x2F;独占（带宽是否共同使用）</li>
+</ul>
+</li>
+<li><p>DSL：数字用户线路</p>
+<ul>
+<li>多路信号共同使用一个物理介质</li>
+<li><code>独占</code>至中心局的接入</li>
+</ul>
+<blockquote>
+<p><strong>考虑到用户上网通常需要获取网上的信息而非发布信息，所以设计上使得下载速度比上传速度快</strong>。</p>
+</blockquote>
+  
+<ul>
+<li>ADSL：非对称数字用户新路</li>
+</ul>
+</li>
+<li><p>电缆网络</p>
+<ul>
+<li>频分多路复用：在不同频带（载波）上传输不同频道</li>
+</ul>
+  
+<ul>
+<li><code>共享</code>家庭至电缆头端的接入网络</li>
+</ul>
+</li>
+</ul>
+  
+</li>
+<li><p>机构接入网络</p>
+<ul>
+<li>以太网：计算机局域网技术</li>
+</ul>
+</li>
+<li><p>无线接入网络</p>
+<ul>
+<li>通过共享的无线接入网络连接端系统与路由器</li>
+<li>无线局域网（LANs）</li>
+<li>Wi-Fi</li>
+<li>广域无线接入<ul>
+<li>蜂窝网</li>
+<li>3G、4G</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="网络核心"><a href="#网络核心" class="headerlink" title="网络核心"></a>网络核心</h3><ul>
+<li>互联的路由器网络</li>
+<li>关键功能：路由 + 转发<ul>
+<li><p>根据地址信息，把数据通过接口送到下一个节点</p>
+</li>
+<li><p>路由器：本地转发表&#x2F;路由表</p>
+  
+<ul>
+<li>根据路由协议，运行路由算法得到的</li>
+</ul>
+</li>
+<li><p>路由（routing）： 确定分组从源到目的传输路径</p>
+</li>
+<li><p>转发（forwarding）：将分组从路由器的输入端口交换至正确的输出端口</p>
+</li>
+</ul>
+</li>
+<li>解决的基本问题<ul>
+<li><strong>如何实现数据从源主机通过网络核心送达目的主机</strong><ul>
+<li><strong>数据交换</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Internet结构：网络之网络"><a href="#Internet结构：网络之网络" class="headerlink" title="Internet结构：网络之网络"></a>Internet结构：网络之网络</h3><blockquote>
+<p>端系统（主机）通过<code>接入ISP</code>（access ISPs，互联网接入服务提供商）连接到Internet</p>
+</blockquote>
+<ul>
+<li>接入ISP必须进一步互联<ul>
+<li>这样任意两个主机才可以互相发送分组</li>
+</ul>
+</li>
+<li>构成复杂的网络互联的网络</li>
+<li>当前结构？<ul>
+<li>无人能给出精确描述</li>
+</ul>
+</li>
+</ul>
+<p>可选方案</p>
+<ul>
+<li><p>每个接入ISP直接彼此互联</p>
+<ul>
+<li>直接互联不适用于大规模网络：O(n^2)连接问题</li>
+</ul>
+</li>
+<li><p>每个接入ISP连接到全球ISP</p>
+<ul>
+<li>必定有竞争者</li>
+<li>这些ISP必须互联<ul>
+<li>对等链路（peering link）</li>
+<li>互联网交换节点（IXP， exchange point）<ul>
+<li>本身就是一个高速的网络</li>
+</ul>
+</li>
+<li>区域网络，区域ISP</li>
+<li>内容提供商网络<ul>
+<li>如google，微软</li>
+<li>可能运行自己的网络，并就近为端用户提供服务、内容</li>
+<li>通常绕过一级ISPs和区域ISPs进行构建</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  
+  </li>
+</ul>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数据交换</title>
+    <url>/2023/10/15/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
