@@ -441,7 +441,7 @@
   </entry>
   <entry>
     <title>数据交换</title>
-    <url>/2023/10/15/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/</url>
+    <url>/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/</url>
     <content><![CDATA[<h2 id="网络结构"><a href="#网络结构" class="headerlink" title="网络结构"></a>网络结构</h2><ul>
 <li>网络边缘</li>
 <li>网络核心<ul>
@@ -462,7 +462,8 @@
 <li>（交换设备）动态转接</li>
 <li>将一个端口的数据转移到另一个端口</li>
 </ul>
-<p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%5Cimage-20231015134940773.png" alt="image-20231015134940773"><figcaption>image-20231015134940773</figcaption></figure></p>
+<img lazyload src="/images/loading.svg" data-src="/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/image-20231015134940773.png" class title="image-20231015134940773">
+
 <ul>
 <li>动态分配传输资源<ul>
 <li>计算机网络里是这一个层面的交换</li>
@@ -499,7 +500,8 @@
 <h2 id="多路复用"><a href="#多路复用" class="headerlink" title="多路复用"></a>多路复用</h2><ul>
 <li>简称<strong>复用</strong>，是通信技术中的基本概念</li>
 </ul>
-<p><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%5Cimage-20231015135032051.png"></p>
+<img lazyload src="/images/loading.svg" data-src="/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/image-20231015135032051.png" class>
+
 <p>链路&#x2F;网络资源（如带宽）换分为“资源片”</p>
 <ul>
 <li>将资源篇分配给各路“呼叫”</li>
@@ -533,7 +535,7 @@
 <li>光的频分复用（波长 对应 频率）</li>
 <li>用于光通信系统：光纤</li>
 </ul>
-  <img lazyload src="/images/loading.svg" data-src="数据交换\image-20231015135247421.png" style="zoom:50%;">
+  <img lazyload src="/images/loading.svg" data-src="./数据交换/image-20231015135247421.png" style="zoom:50%;">
 
 <ul>
 <li>复用器 + 分用器</li>
@@ -561,11 +563,11 @@
 <li><p>各用户的叠加向量为</p>
 </li>
 </ul>
-<p>​		<figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%5Cimage-20231015140334611.png" alt="image-20231015140334611"><figcaption>image-20231015140334611</figcaption></figure></p>
+<p>​		<img lazyload src="/images/loading.svg" data-src="/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/image-20231015140334611.png" class title="image-20231015140334611"></p>
 <ul>
 <li>解码：码片序列与编码信号的内积</li>
 </ul>
-<p>​		<figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%5Cimage-20231015140403842.png" alt="image-20231015140403842"><figcaption>image-20231015140403842</figcaption></figure></p>
+<p>​		<img lazyload src="/images/loading.svg" data-src="/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/image-20231015140403842.png" class title="image-20231015140403842"></p>
 ]]></content>
       <categories>
         <category>计算机网络</category>
@@ -574,7 +576,7 @@
   </entry>
   <entry>
     <title>数据交换：报文，分组</title>
-    <url>/2023/10/15/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%EF%BC%9A%E6%8A%A5%E6%96%87%EF%BC%8C%E5%88%86%E7%BB%84/</url>
+    <url>/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%EF%BC%9A%E6%8A%A5%E6%96%87%EF%BC%8C%E5%88%86%E7%BB%84/</url>
     <content><![CDATA[<ul>
 <li>电路交换：资源独占</li>
 <li>报文交换</li>
@@ -593,8 +595,7 @@
 <li><p>通常在原始数据的基础上加上头部信息</p>
 </li>
 <li><p>一般来说加上控制信息：地址信息</p>
-<p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%EF%BC%9A%E6%8A%A5%E6%96%87%EF%BC%8C%E5%88%86%E7%BB%84%5Cimage-20231015150538959.png" alt="image-20231015150538959"><figcaption>image-20231015150538959</figcaption></figure></p>
-</li>
+<img lazyload src="/images/loading.svg" data-src="/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%EF%BC%9A%E6%8A%A5%E6%96%87%EF%BC%8C%E5%88%86%E7%BB%84/image-20231015150538959.png" class title="image-20231015150538959"></li>
 </ul>
 <p>分组交换需要报文的拆分和重组</p>
 <ul>
@@ -633,9 +634,10 @@
 <p>等待时长和传输时长</p>
 </blockquote>
 <p>传输延迟&#x2F;传输时延：从第一个比特发送开始到最后一个比特发送结束</p>
-<p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%EF%BC%9A%E6%8A%A5%E6%96%87%EF%BC%8C%E5%88%86%E7%BB%84%5Cimage-20231015152352057.png" alt="image-20231015152352057"><figcaption>image-20231015152352057</figcaption></figure></p>
+<img lazyload src="/images/loading.svg" data-src="/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%EF%BC%9A%E6%8A%A5%E6%96%87%EF%BC%8C%E5%88%86%E7%BB%84/image-20231015152352057.png" class title="image-20231015152352057">
+
 <p>（忽略其他时间开销：包括分组的拆分和重组、头部数据开销）</p>
-<figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="数据交换：报文，分组\image-20231015154551841.png" alt="image-20231015154551841" style="zoom:33%;"><figcaption>image-20231015154551841</figcaption></figure>
+<figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="./数据交换：报文，分组/image-20231015154551841.png" alt="image-20231015154551841" style="zoom:33%;"><figcaption>image-20231015154551841</figcaption></figure>
 
 <ul>
 <li><p>缓存至少需要报文大小</p>
@@ -646,19 +648,19 @@
 <p><strong>大部分计算机&#x2F;数据网络中使用的传输技术</strong></p>
 <p>跳步：基本与链路对应</p>
 <p>跳步数 &#x3D; 路由器数 + 1</p>
-<figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="数据交换：报文，分组\image-20231015170236190.png" alt="image-20231015170236190" style="zoom:67%;"><figcaption>image-20231015170236190</figcaption></figure>
+<figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="./数据交换：报文，分组/image-20231015170236190.png" alt="image-20231015170236190" style="zoom:67%;"><figcaption>image-20231015170236190</figcaption></figure>
 
 <blockquote>
 <p> 解释：最后一组到达第一个路由器的时间 + 跳步时间</p>
 </blockquote>
 <hr>
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="数据交换：报文，分组\image-20231015170910343.png" alt="image-20231015170910343" style="zoom: 33%;"><figcaption>image-20231015170910343</figcaption></figure>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src=".\数据交换：报文，分组\image-20231015170910343.png" alt="image-20231015170910343" style="zoom: 33%;"><figcaption>image-20231015170910343</figcaption></figure>
 
 <p>分组交换 vs 电路交换？</p>
 <ul>
 <li>统计多路复用 vs 共用电路</li>
 </ul>
-<figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="数据交换：报文，分组\image-20231015191112628.png" alt="image-20231015191112628" style="zoom: 50%;"><figcaption>image-20231015191112628</figcaption></figure>
+<img lazyload src="/images/loading.svg" data-src="/2023/10/15/Network/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%EF%BC%9A%E6%8A%A5%E6%96%87%EF%BC%8C%E5%88%86%E7%BB%84/image-20231015191112628.png" class title="image-20231015152352057">
 
 <ul>
 <li><p>分组交换允许更多用户同时使用网络</p>
@@ -685,6 +687,43 @@
 </ul>
 </li>
 </ul>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+        <category>介绍</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>计算机网络性能</title>
+    <url>/2023/10/15/Network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%A7%E8%83%BD/</url>
+    <content><![CDATA[<div class="note-large default"><div class="notel-title"><i class="notel-icon fa-solid fa-info"></i><p>引子</p>
+</div><div class="notel-content"><p>任何一个系统都需要一个性能指标来评价系统的优劣</p>
+</div></div>
+
+
+
+<h3 id="速率"><a href="#速率" class="headerlink" title="速率"></a>速率</h3><ul>
+<li>速率即数据率(data rate)或称数据传输速率或比特率(bit rate)<ul>
+<li>单位时间(s)传输信息(bit)量</li>
+<li>单位：b&#x2F;s(bps), kb&#x2F;s, Mb&#x2F;s, Gb&#x2F;s</li>
+</ul>
+</li>
+<li>速率往往是指<strong>额定速率</strong>或<strong>标称速率</strong></li>
+</ul>
+<h3 id="带宽（bandwidth）"><a href="#带宽（bandwidth）" class="headerlink" title="带宽（bandwidth）"></a>带宽（bandwidth）</h3><ul>
+<li>原本指信号具有的频带宽度，即最高频率与最低频率之差，单位是赫兹</li>
+<li>网络的“带宽”指数字信道所能传送的“最高数据率”，单位：bps</li>
+</ul>
+<h3 id="延迟-时延（delay-latency）"><a href="#延迟-时延（delay-latency）" class="headerlink" title="延迟&#x2F;时延（delay&#x2F;latency）"></a>延迟&#x2F;时延（delay&#x2F;latency）</h3><blockquote>
+<p>Q：分组交换为什么会发生丢包和时延</p>
+<p>A：分组到达速率超出输出链路容量时</p>
+<ol>
+<li>正在进行转发分组的时候会产生延时</li>
+<li>排队等待延迟</li>
+<li>可用缓存有限：如果缓存满，大多数系统的选择：到达分组被丢弃-丢包（loss）</li>
+</ol>
+</blockquote>
+<p><figure class="image-caption"><img lazyload src="/images/loading.svg" data-src="/.%5C%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%A7%E8%83%BD%5Cimage-20231015210554441.png" alt="image-20231015210554441"><figcaption>image-20231015210554441</figcaption></figure></p>
 ]]></content>
       <categories>
         <category>计算机网络</category>
