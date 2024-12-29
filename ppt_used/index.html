@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课堂 PPT 总结</title>
+    <style>
+        /* 去除页面默认边距和填充，让页面占满整个视口 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* 设置通用字体 */
+            background-color: #f5f5f7; /* 类似苹果产品的浅灰色背景 */
+        }
+
+       .app-container {
+            max-width: 1800px; /* 限制整体内容宽度，避免太宽影响美观 */
+            margin: 0 auto; /* 水平居中容器 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加淡淡的阴影，增加层次感 */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 使容器至少占满整个视口高度 */
+        }
+
+       .app-header {
+            background-color: #000; /* 黑色背景，体现简洁高端感 */
+            color: white; /* 文字白色，与黑色背景形成对比 */
+            text-align: center; /* 标题文字居中 */
+            padding: 20px 0; /* 上下添加一定的内边距 */
+        }
+
+       .app-header h1 {
+            margin: 0; /* 去除标题默认外边距 */
+            font-size: 24px; /* 设置合适的字体大小 */
+            font-weight: normal; /* 采用正常字体粗细，体现简洁感 */
+        }
+
+       .image-viewer-container {
+            padding: 0px; /* 给图片查看区域添加内边距 */
+            background-color: white; /* 白色背景，突出图片 */
+            display: flex; /* 使用弹性布局，方便按钮和图片的排列 */
+            flex-direction: column; /* 垂直排列元素 */
+            align-items: center; /* 子元素水平居中 */
+            flex: 0; /* 让此部分填充剩余空间 */
+        }
+
+       .image-card {
+            display: flex; /* 让内部按钮和图片包装器可以灵活排列 */
+            align-items: center; /* 垂直居中对齐 */
+            width: 100%; /* 占满父容器宽度 */
+        }
+
+       .nav-button {
+            background-color: #000; /* 黑色按钮背景，简洁风格 */
+            color: white; /* 白色按钮文字 */
+            border: none; /* 去除边框 */
+            font-size: 20px; /* 合适的按钮字体大小 */
+            padding: 10px 20px; /* 按钮内边距 */
+            cursor: pointer; /* 鼠标悬停变为手型 */
+            border-radius: 5px; /* 按钮添加圆角 */
+            transition: background-color 0.3s ease; /* 按钮背景色过渡效果 */
+        }
+
+       .nav-button:hover {
+            background-color: #333; /* 鼠标悬停时按钮背景色变深一点 */
+        }
+
+       .image-wrapper {
+            flex: 1; /* 图片包装器占据剩余空间，让图片自适应大小并居中 */
+            text-align: center; /* 图片在包装器内居中 */
+            margin: 0px; /* 图片左右添加一定间距 */
+        }
+
+        #image-display {
+            width: 1600px; /* 设定固定宽度，可根据期望的分辨率调整 */
+            height: 900px; /* 按照16:9比例设定固定高度，可根据期望的分辨率调整 */
+            object-fit: contain; /* 保持图片比例缩放，完整显示图片 */
+            transition: transform 0.3s ease; /* 平滑过渡效果 */
+        }
+
+       .app-footer {
+            background-color: #000; /* 黑色背景，与头部呼应 */
+            color: white; /* 白色文字 */
+            text-align: center; /* 文字居中 */
+            padding: 10px 0; /* 上下添加一定内边距 */
+            font-size: 12px; /* 较小的字体显示版权信息 */
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>课堂 PPT 总结</h1>
+        </header>
+        <main class="image-viewer-container">
+            <div class="image-card">
+                <button id="prev-btn" class="nav-button">◀</button>
+                <div class="image-wrapper">
+                    <img id="image-display" src="" alt="Image Viewer">
+                </div>
+                <button id="next-btn" class="nav-button">▶</button>
+            </div>
+        </main>
+        <footer class="app-footer">
+        </footer>
+    </div>
+ <script>
+        // 存储图片路径的数组
+       const imageFolderPath = 'picture/'; // 替换为实际图片文件夹路径
+        let imagePaths  = [
+           'frame1_1.jpg','frame1_2.jpg','frame1_5.jpg','frame1_7.jpg','frame1_24.jpg','frame1_25.jpg','frame1_29.jpg','frame1_30.jpg','frame1_34.jpg','frame1_40.jpg','frame1_41.jpg','frame1_42.jpg','frame1_43.jpg','frame1_44.jpg','frame3_0.jpg','frame3_1.jpg','frame3_2.jpg','frame3_4.jpg','frame3_5.jpg','frame3_7.jpg','frame3_8.jpg','frame3_10.jpg','frame3_11.jpg','frame3_13.jpg','frame3_14.jpg','frame3_15.jpg','frame3_16.jpg','frame3_17.jpg','frame3_19.jpg','frame3_20.jpg','frame3_21.jpg','frame3_22.jpg','frame3_23.jpg','frame3_24.jpg','frame3_25.jpg','frame3_26.jpg','frame3_28.jpg','frame3_29.jpg','frame3_30.jpg','frame3_31.jpg','frame3_32.jpg','frame3_33.jpg','frame3_34.jpg','frame3_35.jpg','frame3_36.jpg','frame3_37.jpg','frame3_38.jpg','frame3_39.jpg','frame3_40.jpg','frame3_41.jpg','frame3_42.jpg','frame3_43.jpg','frame3_44.jpg','frame6_0.jpg','frame6_2.jpg','frame6_5.jpg','frame6_10.jpg','frame6_12.jpg','frame6_14.jpg','frame6_15.jpg','frame6_16.jpg','frame6_17.jpg','frame6_18.jpg','frame6_19.jpg','frame6_20.jpg','frame6_21.jpg','frame6_22.jpg','frame6_23.jpg','frame6_24.jpg','frame6_26.jpg','frame6_28.jpg','frame6_29.jpg','frame6_31.jpg','frame6_36.jpg','frame6_40.jpg','frame6_41.jpg','frame6_42.jpg','frame10_0.jpg','frame10_1.jpg','frame10_2.jpg','frame10_3.jpg','frame10_4.jpg','frame10_5.jpg','frame10_6.jpg','frame10_10.jpg','frame10_11.jpg','frame10_12.jpg','frame10_16.jpg','frame10_19.jpg','frame10_23.jpg','frame10_25.jpg','frame10_27.jpg','frame10_37.jpg','frame10_40.jpg','frame11_1.jpg','frame11_8.jpg','frame11_9.jpg','frame11_14.jpg','frame11_18.jpg','frame11_22.jpg','frame11_23.jpg','frame11_25.jpg','frame11_27.jpg','frame11_32.jpg','frame11_34.jpg','frame11_35.jpg','frame11_36.jpg','frame11_40.jpg','frame11_42.jpg','frame11_43.jpg','frame12_0.jpg','frame12_7.jpg','frame12_11.jpg','frame12_12.jpg','frame12_13.jpg','frame12_19.jpg','frame12_20.jpg','frame12_23.jpg','frame12_25.jpg','frame12_26.jpg','frame12_28.jpg','frame12_29.jpg','frame12_34.jpg','frame12_38.jpg','frame12_41.jpg','frame13_0.jpg','frame13_2.jpg','frame13_5.jpg','frame13_8.jpg','frame13_9.jpg','frame13_13.jpg','frame13_15.jpg','frame13_17.jpg','frame13_18.jpg','frame13_21.jpg','frame13_22.jpg','frame13_23.jpg','frame13_29.jpg','frame13_34.jpg','frame13_37.jpg','frame13_38.jpg','frame13_40.jpg','frame13_43.jpg'
+            // 在此添加更多的图片路径
+        ];
+
+        let currentIndex = 0;
+        const mainImage = document.getElementById('image-display');
+        const prevButton = document.getElementById('prev-btn');
+        const nextButton = document.getElementById('next-btn');
+
+        // 加载图片的函数
+        function loadImage() {
+            if (imagePaths.length > 0) {
+                mainImage.src = imageFolderPath + imagePaths[currentIndex];
+            }
+        }
+
+        // 上一张按钮的点击事件处理函数
+        prevButton.addEventListener('click', function () {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = imagePaths.length - 1;
+            }
+            loadImage();
+        });
+
+        // 下一张按钮的点击事件处理函数
+        nextButton.addEventListener('click', function () {
+            currentIndex++;
+            if (currentIndex >= imagePaths.length) {
+                currentIndex = 0;
+            }
+            loadImage();
+        });
+
+        // 页面加载时加载第一张图片
+        window.addEventListener('load', loadImage);
+    </script>
+</body>
+</html>
