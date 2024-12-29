@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple-Style Charts</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SF Pro Display', sans-serif;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            color: #1d1d1f;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #000;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .chart {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #0071e3;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Apple-Style Charts</h1>
+    <div class="chart-container">
+        <div class="chart">
+            <canvas id="chartCanvas"></canvas>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="showChart('line')">Line Chart</button>
+        <button onclick="showChart('bar')">Bar Chart</button>
+        <button onclick="showChart('pie')">Pie Chart</button>
+    </div>
+
+    <script>
+        const chartCanvas = document.getElementById('chartCanvas').getContext('2d');
+        let currentChart;
+
+        function createChart(type) {
+            const data = {
+                line: {
+                    labels: ['January', 'February', 'March', 'April', 'May'],
+                    datasets: [{
+                        label: 'Monthly Sales',
+                        data: [65, 59, 80, 81, 56],
+                        borderColor: '#0071e3',
+                        backgroundColor: 'rgba(0, 113, 227, 0.1)',
+                        tension: 0.3
+                    }]
+                },
+                bar: {
+                    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+                    datasets: [{
+                        label: 'Quarterly Revenue',
+                        data: [200, 300, 400, 500],
+                        backgroundColor: ['#0071e3', '#34c759', '#ff9500', '#ff3b30']
+                    }]
+                },
+                pie: {
+                    labels: ['iPhone', 'Mac', 'iPad', 'Services'],
+                    datasets: [{
+                        data: [40, 20, 15, 25],
+                        backgroundColor: ['#0071e3', '#34c759', '#ff9500', '#ff3b30']
+                    }]
+                }
+            };
+
+            if (currentChart) {
+                currentChart.destroy();
+            }
+
+            currentChart = new Chart(chartCanvas, {
+                type: type,
+                data: data[type],
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        }
+                    }
+                }
+            });
+        }
+
+        function showChart(type) {
+            createChart(type);
+        }
+
+        // Show default chart
+        showChart('line');
+    </script>
+</body>
+</html>
