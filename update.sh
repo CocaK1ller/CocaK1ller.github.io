@@ -18,3 +18,6 @@ git push
 # 生成和部署 Hexo 静态文件
 hexo clean
 hexo g -d
+
+# 等待用户输入，使命令行不关闭
+read -p "按回车键关闭命令行"
