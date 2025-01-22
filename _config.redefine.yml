@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: /images/fulilian.png
   # Site logo
-  logo: 
+  logo: /images/fulilian.png
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: /images/malu.png
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -52,19 +52,19 @@ global:
   fonts:
     # Chinese fonts
     chinese: 
-      enable: false # Whether to enable custom chinese fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
+      enable: true
+      family: 腾讯体
+      url: fonts/TencentW7/tencent-w7.css
     # English fonts
     english: 
-      enable: false # Whether to enable custom english fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
+      enable: true
+      family: 腾讯体
+      url: fonts/TencentW7/tencent-w7.css
     # Custom title fonts (navbar, sidebar)
     title:
-      enable: false # Whether to enable custom title fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
+      enable: true
+      family: 腾讯体
+      url: fonts/TencentW7/tencent-w7.css
   # Content max width
   content_max_width: 1000px
   # Sidebar width
@@ -305,9 +305,9 @@ articles:
       light: github # light mode theme, support: github, atom-one-light, default
       dark: vs2015 # dark mode theme, support: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
     font: # Custom font
-      enable: false # Whether to enable
-      family: # Font family
-      url: # Font URL to CSS file
+      enable: true
+      family: 腾讯体
+      url: fonts/TencentW7/tencent-w7.css
   # Table of contents settings
   toc:
     enable: true # Whether to enable TOC

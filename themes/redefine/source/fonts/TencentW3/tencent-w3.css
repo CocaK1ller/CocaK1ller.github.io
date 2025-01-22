@@ -1,0 +1,14 @@
+/*
+ * Geist Variable v1.3.0
+ * By Vercel
+ */
+
+@font-face {
+    font-family: '腾讯体';
+    src: local('腾讯体w3'),
+    local('腾讯体'),
+    url('tencent-w3.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
