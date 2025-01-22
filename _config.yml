@@ -7,13 +7,13 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: ArnoYang
+author: John Doe
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://github.com/CocaK1ller
+url: http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,4 +104,4 @@ deploy:
   type: git
   repo: https://github.com/CocaK1ller/CocaK1ller.github.io.git
   branch: main
-  token: 
+  token: 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
