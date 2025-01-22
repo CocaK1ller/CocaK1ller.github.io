@@ -16,7 +16,9 @@ git commit -m "更新 blog 文件"
 git push
 
 # 生成和部署 Hexo 静态文件
-hexo g -d
+hexo clean
+hexo generate
+hexo deploy
 
 # 等待用户输入，使命令行不关闭
 read -p "按回车键关闭命令行"
