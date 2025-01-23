@@ -203,7 +203,7 @@ navbar:
       path: / 
       icon: fa-regular fa-house # can be empty
     相册:
-      path: /masonry/
+      path: /photowall/
       icon: fa-solid fa-image #图标
     # Archives: 
     #   path: /archives 

@@ -1,23 +1,24 @@
+# 这个文件命名貌似是 page 文件中 "template: masonry" 相关配置硬编码的
 - image: https://s21.ax1x.com/2025/01/23/pEAOI6P.jpg
-  title: 图片标题
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+  title: 
+  description: 
  
 - image: https://s21.ax1x.com/2025/01/23/pEAO5lt.jpg
-  title: Lorem ipsum
-  description: Lorem ipsum dolor sit amet
+  title: 
+  description: 
 
 - image: https://s21.ax1x.com/2025/01/23/pEAO4SI.jpg
-  title: Lorem ipsum
-  description: Lorem ipsum dolor sit amet
+  title: 
+  description: 
 
 - image: https://s21.ax1x.com/2025/01/23/pEAORFH.jpg
-  title: Lorem ipsum
-  description: Lorem ipsum dolor sit amet
+  title: 
+  description: 
 
 - image: https://s21.ax1x.com/2025/01/23/pEAOgTe.jpg
-  title: Lorem ipsum
-  description: Lorem ipsum dolor sit amet
+  title: 
+  description: 
 
 - image: https://s21.ax1x.com/2025/01/23/pEAOcwD.jpg
-  title: Lorem ipsum
-  description: Lorem ipsum dolor sit amet
+  title: 
+  description: 
