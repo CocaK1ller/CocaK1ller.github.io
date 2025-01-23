@@ -144,7 +144,7 @@ home_banner:
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
   text_color: 
-    light: "#d1d1b6" # light mode
+    light: "#fff" #"#d1d1b6" # light mode
     dark: "#fff" # dark mode
   # Specific style of the text
   text_style: 
@@ -202,6 +202,9 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
+    相册:
+      path: /masonry/
+      icon: fa-solid fa-image #图标
     # Archives: 
     #   path: /archives 
     #   icon: fa-regular fa-archive # can be empty
@@ -300,10 +303,10 @@ articles:
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button
-    style: mac # mac | simple
+    style: simple # mac | simple
     highlight_theme: # Color scheme for highlightjs code highlighting. For preview, see https://highlightjs.org/examples
       light: github # light mode theme, support: github, atom-one-light, default
-      dark: vs2015 # dark mode theme, support: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
+      dark: github-dark # dark mode theme, support: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
     font: # Custom font
       enable: false
       family: 腾讯体
