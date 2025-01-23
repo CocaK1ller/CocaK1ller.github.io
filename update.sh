@@ -8,6 +8,7 @@ git pull
 
 # 生成和部署 Hexo 静态文件
 hexo generate
+hexo deploy
 
 # 添加所有改动
 git add .
