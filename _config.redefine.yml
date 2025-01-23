@@ -57,7 +57,7 @@ global:
       url: fonts/TencentW7/tencent-w7.css
     # English fonts
     english: 
-      enable: true
+      enable: false
       family: 腾讯体
       url: fonts/TencentW7/tencent-w7.css
     # Custom title fonts (navbar, sidebar)
@@ -125,7 +125,7 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/fulilian-light.jpg # light mode
+    light: /images/fulilian-dark.jpg # light mode
     dark: /images/fulilian-dark.jpg # dark mode
   # Home banner title
   title: ArnoYang's Notes
@@ -305,7 +305,7 @@ articles:
       light: github # light mode theme, support: github, atom-one-light, default
       dark: vs2015 # dark mode theme, support: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
     font: # Custom font
-      enable: true
+      enable: false
       family: 腾讯体
       url: fonts/TencentW7/tencent-w7.css
   # Table of contents settings
@@ -391,13 +391,13 @@ footer:
   # Show website running time
   runtime: true # show website running time or not
   # Icon in footer, write fontawesome icon code here
-  icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
+  icon: '<i class="fa-solid fa-frog fa-bounce" style="--fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; color: #DAF7A6"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  start: 2025/1/1 0:0:0
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
-  customize:
+  customize: "记录一点有趣的东西 ^_^"
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
     enable: false # Whether to enable
