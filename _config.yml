@@ -100,8 +100,8 @@ theme: redefine
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/CocaK1ller/CocaK1ller.github.io.git
-  branch: main
-  token: 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
+# deploy:
+  # type: git
+  # repo: https://github.com/CocaK1ller/CocaK1ller.github.io.git
+  # branch: main
+  # token: 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
