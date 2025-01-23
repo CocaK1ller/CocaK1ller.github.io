@@ -6,19 +6,17 @@ set -e
 # 拉取最新的代码
 git pull
 
+# 生成和部署 Hexo 静态文件
+hexo generate
+
 # 添加所有改动
 git add .
 
 # 提交改动
-git commit -m "更新 blog 文件"
+git commit -m "更新 blog 文件及网页部署文件"
 
 # 推送到远程仓库
 git push
-
-# 生成和部署 Hexo 静态文件
-hexo clean
-hexo generate
-hexo deploy
 
 # 等待用户输入，使命令行不关闭
 read -p "按回车键关闭命令行"
