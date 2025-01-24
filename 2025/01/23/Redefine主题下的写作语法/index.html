@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-23T09:45:37.000Z">
-<meta property="article:modified_time" content="2025-01-23T09:54:11.621Z">
+<meta property="article:modified_time" content="2025-01-24T07:20:49.813Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
@@ -255,7 +255,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -306,8 +306,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-01-23 17:54:11</span>
-            <span class="mobile">2025-01-23 17:54:11</span>
+            <span class="desktop">2025-01-24 15:20:49</span>
+            <span class="mobile">2025-01-24 15:20:49</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -345,7 +345,108 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<p>该网站用的是 Hexo 博客框架 + Redifine 主题。其中 Redifine 在 Markdown 语法以外提供了一些扩展写作语法，这里迁移 Redefine 文档的部分内容作为记录。</p>
+			<p>该网站用的是 Hexo 博客框架 + Redifine 主题。其中 Redifine 在 Markdown 语法以外提供了一些扩展写作语法，这里记录 Redefine 文档的部分内容以供之后查阅。</p>
+<h3 id="写作语法"><a href="#写作语法" class="headerlink" title="写作语法"></a>写作语法</h3><h4 id="大号提示块"><a href="#大号提示块" class="headerlink" title="大号提示块"></a>大号提示块</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% notel [颜色] [可选: 自定义图标] [标题] %&#125;</span><br><span class="line">内容</span><br><span class="line">支持换行</span><br><span class="line">&#123;% endnotel %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>样式&#x2F;颜色</td>
+<td>提示块的样式或颜色</td>
+<td><code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
+</tr>
+<tr>
+<td>自定义图标</td>
+<td>自定义图标，选填</td>
+<td><a class="link"   target="_blank" rel="noopener" href="https://fontawesome.com/search" >Fontawsome <i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 的图标名称后半部分，比如 fa-image</td>
+</tr>
+</tbody></table>
+<p>效果：</p>
+
+  <div class="note-large red">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <p>自定义标题</p>
+
+    </div>
+    <div class="notel-content">
+      <p>换行测试<br>换行测试<br>换行测试</p>
+
+    </div>
+  </div>
+
+<h4 id="小号提示块"><a href="#小号提示块" class="headerlink" title="小号提示块"></a>小号提示块</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note [样式/颜色] [可选: 自定义图标] %&#125;</span><br><span class="line">笔记内容</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>样式&#x2F;颜色</td>
+<td>提示块的样式或颜色</td>
+<td><code>success</code> <code>default</code> <code>primary</code> <code>info</code> <code>warning</code> <code>danger</code> <code>tip</code> <code>question</code> 以及 <code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
+</tr>
+<tr>
+<td>自定义图标</td>
+<td>自定义图标，选填</td>
+<td><a class="link"   target="_blank" rel="noopener" href="https://fontawesome.com/search" >Fontawsome <i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 的图标名称后半部分，比如 fa-image</td>
+</tr>
+</tbody></table>
+<p>效果：</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>默认 提示块标签 </p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>default 提示块标签 </p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small primary">
+    <p>primary 提示块标签 </p>
+
+  </div>
+
+<h4 id="折叠"><a href="#折叠" class="headerlink" title="折叠"></a>折叠</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% folding [颜色]::[标题] %&#125;</span><br><span class="line"> </span><br><span class="line">需要写的内容</span><br><span class="line"> </span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 测试： 点击查看更多 </summary>
+              <div class='content'>
+              <p>啊啊啊啊啊</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>danger 提示块标签</p>  </div>   <div class="note p-4 mb-4 rounded-small tip">    <p>tip 提示块标签</p>  </div> 
+              </div>
+            </details>
+
+<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn [可选大小]::[名称]::[url]::[可选图标] %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>不设置任何参数的 <a class="button " href='/' title='按钮'>按钮</a> 适合融入段落中。</p>
+<p>regular 按钮适合独立于段落之外：</p>
+<a class="button  regular" target="_blank" rel="noopener" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
+<a class="button  regular" target="_blank" rel="noopener" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
+<p>large 按钮更具有强调作用，建议搭配 center 使用：</p>
+<a class="button  center large" target="_blank" rel="noopener" href='https://redefine-docs.ohevan.com' title='开始使用'><i class='fa-solid fa-download'></i> 开始使用</a>
+
+<h4 id="选项卡"><a href="#选项卡" class="headerlink" title="选项卡"></a>选项卡</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs 页面内不重复的ID %&#125;</span><br><span class="line"> </span><br><span class="line">&lt;!-- tab 栏目1名称 --&gt;</span><br><span class="line"> </span><br><span class="line">内容</span><br><span class="line"> </span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 栏目2名称 --&gt;</span><br><span class="line"> </span><br><span class="line">内容</span><br><span class="line"> </span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"> </span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">First Tab</a></li><li class="tab"><a class="#first-unique-name-2">Second Tab</a></li><li class="tab"><a class="#first-unique-name-3">Third Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
+
+<h3 id="Html-Color-Codes"><a href="#Html-Color-Codes" class="headerlink" title="Html Color Codes"></a>Html Color Codes</h3>
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>现代浏览器支持140种已命名的颜色，如下所列。根据名称、Hex代码或RGB值将其用于您的HTML和CSS。</p>
+
+  </div>
+
+
+<p><a class="link"   target="_blank" rel="noopener" href="https://htmlcolorcodes.com/zh/yanse-ming/" >Html Color Codes<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
 
 		</div>
 
@@ -367,24 +468,18 @@
     <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
     </div>
-    <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/hello-world/" title="Hello World" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Hello World" class="!max-w-none">
-  <span class="title">Hello World</span>
-</a><a class="recommended-article-item" href="/2025/01/23/hello-hexo-部署中遇到的一个坑/" title="hexo 部署中遇到的一个坑" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="hexo 部署中遇到的一个坑" class="!max-w-none">
-  <span class="title">hexo 部署中遇到的一个坑</span>
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/hello-hexo-部署中遇到的一个坑/" title="Hexo 字体修改" rel="bookmark">
+  <img src="/images/wallhaven-wqery6-light.webp" alt="Hexo 字体修改" class="!max-w-none">
+  <span class="title">Hexo 字体修改</span>
 </a></div>
    </div>
    <div class="recommended-mobile">
    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
    </div>
-   <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/hello-world/" title="Hello World" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Hello World" class="!max-w-none">
-  <span class="title">Hello World</span>
-</a><a class="recommended-article-item" href="/2025/01/23/hello-hexo-部署中遇到的一个坑/" title="hexo 部署中遇到的一个坑" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="hexo 部署中遇到的一个坑" class="!max-w-none">
-  <span class="title">hexo 部署中遇到的一个坑</span>
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/hello-hexo-部署中遇到的一个坑/" title="Hexo 字体修改" rel="bookmark">
+  <img src="/images/wallhaven-wqery6-light.webp" alt="Hexo 字体修改" class="!max-w-none">
+  <span class="title">Hexo 字体修改</span>
 </a></div>
    </div>
   </div>
@@ -394,9 +489,9 @@
 			
 			
 			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/2025/01/23/hello-world/">
+				<a class="next" rel="next" href="/2025/01/23/hello-hexo-%E9%83%A8%E7%BD%B2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item">Hello World</span>
+						<span class="post-nav-title-item">Hexo 字体修改</span>
 						<span class="post-nav-item">Next posts</span>
 					</span>
 					<span class="right arrow-icon flex justify-center items-center">
@@ -461,7 +556,7 @@
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">Redefine 主题下的写作语法</div>
-		
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95"><span class="nav-text">写作语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Html-Color-Codes"><span class="nav-text">Html Color Codes</span></a></li></ol>
 
 	</div>
 </div>
@@ -490,7 +585,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        3 posts in total
+                        2 posts in total
                     </span>
                     
                 </p>

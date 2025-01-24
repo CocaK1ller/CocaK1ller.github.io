@@ -23,14 +23,14 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 部署中遇到的一个坑">
+<meta property="og:title" content="Hexo 字体修改">
 <meta property="og:url" content="http://example.com/2025/01/23/hello-hexo-%E9%83%A8%E7%BD%B2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-22T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-01-23T09:53:35.320Z">
+<meta property="article:modified_time" content="2025-01-24T08:05:53.312Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
@@ -46,7 +46,7 @@
     
     <title>
         
-            hexo 部署中遇到的一个坑 | ArnoYang
+            Hexo 字体修改 | ArnoYang
         
     </title>
 
@@ -255,7 +255,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -278,7 +278,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">hexo 部署中遇到的一个坑</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Hexo 字体修改</h1>
 			</div>
 			
 		</div>
@@ -306,8 +306,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-01-23 17:53:35</span>
-            <span class="mobile">2025-01-23 17:53:35</span>
+            <span class="desktop">2025-01-24 16:05:53</span>
+            <span class="mobile">2025-01-24 16:05:53</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -345,110 +345,77 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+			<p>这篇文章主要记录在配置hexo的字体格式时遇到的坑。</p>
+<h4 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h4><p>看到 Redifine 中提供了很简单的配置，用来修改网页中的中&#x2F;英文&#x2F;代码字体，所以决定尝试一下。</p>
+<div class="code-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Docs: https://redefine-docs.ohevan.com/basic/global</span></span><br><span class="line"><span class="attr">global:</span></span><br><span class="line">  <span class="comment"># Custom global fonts</span></span><br><span class="line">  <span class="attr">fonts:</span></span><br><span class="line">    <span class="comment"># Chinese fonts</span></span><br><span class="line">    <span class="attr">chinese:</span> </span><br><span class="line">      <span class="attr">enable:</span> </span><br><span class="line">      <span class="attr">family:</span> </span><br><span class="line">      <span class="attr">url:</span> </span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 
-<h3 id="写作语法"><a href="#写作语法" class="headerlink" title="写作语法"></a>写作语法</h3><h4 id="大号提示块"><a href="#大号提示块" class="headerlink" title="大号提示块"></a>大号提示块</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% notel [颜色] [可选: 自定义图标] [标题] %&#125;</span><br><span class="line">内容</span><br><span class="line">支持换行</span><br><span class="line">&#123;% endnotel %&#125;</span><br></pre></td></tr></table></figure></div>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><p>首先需要了解一下字体(fonts)属性下的配置</p>
+<ul>
+<li>url: 文档中的<a class="link"   target="_blank" rel="noopener" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" >链接<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>索引到了这样一个CSS，用来自定义一个字体。</li>
+<li>family: 对应CSS中的<code>font-family</code>，作用是用一个列表存储<code>family</code>相同的字体配置，提供一些相对接近的备选字体。<strong>看上去只要将CSS文件中的<code>font-family</code>与这里的<code>family</code>保持相同就可以了</strong></li>
+</ul>
+<div class="code-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* [4] */</span></span><br><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Sans SC&#x27;</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">400</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">https://fonts.gstatic.com/s/notosanssc/v37/k3kXo84MPvpLmixcA63oeALhLOCT-xWNm8Hqd37g1OkDRZe7lR4sg1IzSy-MNbE9VH8V.4.woff2</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">  unicode-range: U+<span class="number">1</span>f1e9-<span class="number">1</span>f1f5, U+<span class="number">1</span>f1f7-<span class="number">1</span>f1ff, U+<span class="number">1</span>f21a, U+<span class="number">1</span>f232, U+<span class="number">1</span>f234-<span class="number">1</span>f237, U+<span class="number">1</span>f250-<span class="number">1</span>f251, U+<span class="number">1</span>f300, U+<span class="number">1</span>f302-<span class="number">1</span>f308, U+<span class="number">1</span>f30a-<span class="number">1</span>f311, U+<span class="number">1</span>f315, U+<span class="number">1</span>f319-<span class="number">1</span>f320, U+<span class="number">1</span>f324, U+<span class="number">1</span>f327, U+<span class="number">1</span>f32a, U+<span class="number">1</span>f32c-<span class="number">1</span>f32d, U+<span class="number">1</span>f330-<span class="number">1</span>f357, U+<span class="number">1</span>f359-<span class="number">1</span>f37e;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
+<p>按照上面谷歌api提供的字体配置，我们需要提供一个类似的CSS文件，其中src字段表示最后的字体文件的存放地址。</p>
+<p>存放地址选用的是themes\redefine\source\fonts文件夹，这个文件夹下存放了三个主题默认字体。直接仿照他们的CSS文件配置：</p>
+<div class="code-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Geist Variable v1.3.0</span></span><br><span class="line"><span class="comment"> * By Vercel</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Geist Variable&#x27;</span>;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">local</span>(<span class="string">&#x27;Geist Variable&#x27;</span>),</span><br><span class="line">    <span class="built_in">local</span>(<span class="string">&#x27;GeistVariable&#x27;</span>),</span><br><span class="line">    <span class="built_in">url</span>(<span class="string">&#x27;GeistVF.woff2&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>),</span><br><span class="line">    <span class="built_in">url</span>(<span class="string">&#x27;GeistVF.woff&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff&#x27;</span>),</span><br><span class="line">    <span class="built_in">url</span>(<span class="string">&#x27;GeistVF.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;truetype&#x27;</span>);</span><br><span class="line">    <span class="attribute">font-weight</span>: <span class="number">200</span> <span class="number">700</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>之前看到google提供的均为woff2格式的字体文件。WOFF与WOFF2是两种压缩字体格式，因此三种字体的兼容性是 TTF &gt; WOFF &gt; WOFF2，体积则相反。浏览器对字体的兼容性可以查看<a class="link"   target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/463273013" >这个网址<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>。</p>
+<h4 id="踩到的坑"><a href="#踩到的坑" class="headerlink" title="踩到的坑"></a>踩到的坑</h4><p>一开始将<code>font-family</code>与<code>font</code>的值均设置为”宋体w7”，并没有成功在页面显示设置的字体。通过 Chrome + F12 发现是CSS文件并没有成功读取到指定url的文件，这里是因为<code>yml</code>格式中引号虽然是可选的，但对于特殊字符和空格还是需要使用引号避免解析错误。之后测试了一些<code>font-family</code>与<code>font</code>的组合，结果如下：</p>
 <table>
 <thead>
 <tr>
-<th>参数</th>
-<th>说明</th>
-<th>可选值</th>
+<th>font-family</th>
+<th>font</th>
+<th>结果</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>样式&#x2F;颜色</td>
-<td>提示块的样式或颜色</td>
-<td><code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
+<td>宋体w7</td>
+<td>宋体w7</td>
+<td>true</td>
 </tr>
 <tr>
-<td>自定义图标</td>
-<td>自定义图标，选填</td>
-<td><a class="link"   target="_blank" rel="noopener" href="https://fontawesome.com/search" >Fontawsome <i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 的图标名称后半部分，比如 fa-image</td>
+<td>宋体w7</td>
+<td>宋体</td>
+<td>false</td>
+</tr>
+<tr>
+<td><strong>宋体</strong></td>
+<td><strong>宋体w7</strong></td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td><strong>宋体w7</strong></td>
+<td><strong>宋体w7w</strong></td>
+<td><strong>false</strong></td>
+</tr>
+<tr>
+<td><strong>宋体</strong></td>
+<td><strong>宋体宋体</strong></td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>w7</td>
+<td>w7</td>
+<td>true</td>
+</tr>
+<tr>
+<td>w7</td>
+<td>w7w</td>
+<td>false</td>
 </tr>
 </tbody></table>
-<p>效果：</p>
-
-  <div class="note-large red">
-    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
-      <p>自定义标题</p>
-
-    </div>
-    <div class="notel-content">
-      <p>换行测试<br>换行测试<br>换行测试</p>
-
-    </div>
-  </div>
-
-<h4 id="小号提示块"><a href="#小号提示块" class="headerlink" title="小号提示块"></a>小号提示块</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note [样式/颜色] [可选: 自定义图标] %&#125;</span><br><span class="line">笔记内容</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
-
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>说明</th>
-<th>可选值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>样式&#x2F;颜色</td>
-<td>提示块的样式或颜色</td>
-<td><code>success</code> <code>default</code> <code>primary</code> <code>info</code> <code>warning</code> <code>danger</code> <code>tip</code> <code>question</code> 以及 <code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
-</tr>
-<tr>
-<td>自定义图标</td>
-<td>自定义图标，选填</td>
-<td><a class="link"   target="_blank" rel="noopener" href="https://fontawesome.com/search" >Fontawsome <i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 的图标名称后半部分，比如 fa-image</td>
-</tr>
-</tbody></table>
-<p>效果：</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>默认 提示块标签 </p>
-
-  </div>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>default 提示块标签 </p>
-
-  </div>
-
-  <div class="note p-4 mb-4 rounded-small primary">
-    <p>primary 提示块标签 </p>
-
-  </div>
-
-<h4 id="折叠"><a href="#折叠" class="headerlink" title="折叠"></a>折叠</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% folding [颜色]::[标题] %&#125;</span><br><span class="line"> </span><br><span class="line">需要写的内容</span><br><span class="line"> </span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure></div>
-
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 测试： 点击查看更多 </summary>
-              <div class='content'>
-              <p>啊啊啊啊啊</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>danger 提示块标签</p>  </div>   <div class="note p-4 mb-4 rounded-small tip">    <p>tip 提示块标签</p>  </div> 
-              </div>
-            </details>
-
-<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn [可选大小]::[名称]::[url]::[可选图标] %&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>不设置任何参数的 <a class="button " href='/' title='按钮'>按钮</a> 适合融入段落中。</p>
-<p>regular 按钮适合独立于段落之外：</p>
-<a class="button  regular" target="_blank" rel="noopener" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
-<a class="button  regular" target="_blank" rel="noopener" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
-<p>large 按钮更具有强调作用，建议搭配 center 使用：</p>
-<a class="button  center large" target="_blank" rel="noopener" href='https://redefine-docs.ohevan.com' title='开始使用'><i class='fa-solid fa-download'></i> 开始使用</a>
-
-<h4 id="选项卡"><a href="#选项卡" class="headerlink" title="选项卡"></a>选项卡</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs 页面内不重复的ID %&#125;</span><br><span class="line"> </span><br><span class="line">&lt;!-- tab 栏目1名称 --&gt;</span><br><span class="line"> </span><br><span class="line">内容</span><br><span class="line"> </span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 栏目2名称 --&gt;</span><br><span class="line"> </span><br><span class="line">内容</span><br><span class="line"> </span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"> </span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
-
-<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">First Tab</a></li><li class="tab"><a class="#first-unique-name-2">Second Tab</a></li><li class="tab"><a class="#first-unique-name-3">Third Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
-
-<h3 id="Html-Color-Codes"><a href="#Html-Color-Codes" class="headerlink" title="Html Color Codes"></a>Html Color Codes</h3>
-  <div class="note p-4 mb-4 rounded-small info">
-    <p>现代浏览器支持140种已命名的颜色，如下所列。根据名称、Hex代码或RGB值将其用于您的HTML和CSS。</p>
-
-  </div>
-
-
-<p><a class="link"   target="_blank" rel="noopener" href="https://htmlcolorcodes.com/zh/yanse-ming/" >Html Color Codes<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p>开发者平台的警告：<code>&#39;content-type&#39; header charset value should be &#39;utf-8&#39;.</code></p>
+</blockquote>
+<p>这似乎是一个索引问题，<code>font-family</code>可以索引到同名的<code>font</code>。除此以外，当<code>font-family</code>为中文时，只会检索<code>font</code>是否出现同样的中文前缀。</p>
+<p>GPT的解释：</p>
+<ul>
+<li>字体名称解析：浏览器在解析 font-family 和 font 时，可能有不同的解析机制。如果 font-family 中的名称与系统或网页加载的字体库中的字体名称完全匹配，字体会正确应用。</li>
+<li>中文前缀匹配：对于中文字体名称，有可能浏览器在某种情况下采用前缀匹配，即 font-family 值中的中文部分匹配字体文件名称中的中文前缀时，字体也会被正确应用。</li>
+</ul>
+<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>最后没有去深入研究究竟是哪里的解析出现的问题，但是再次回忆起被中英文混用支配的恐惧……以后尽量还是英文编码吧。</p>
 
 		</div>
 
@@ -470,10 +437,7 @@
     <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
     </div>
-    <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/hello-world/" title="Hello World" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Hello World" class="!max-w-none">
-  <span class="title">Hello World</span>
-</a><a class="recommended-article-item" href="/2025/01/23/Redefine主题下的写作语法/" title="Redefine 主题下的写作语法" rel="bookmark">
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/Redefine主题下的写作语法/" title="Redefine 主题下的写作语法" rel="bookmark">
   <img src="/images/wallhaven-wqery6-light.webp" alt="Redefine 主题下的写作语法" class="!max-w-none">
   <span class="title">Redefine 主题下的写作语法</span>
 </a></div>
@@ -482,10 +446,7 @@
    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
    </div>
-   <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/hello-world/" title="Hello World" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Hello World" class="!max-w-none">
-  <span class="title">Hello World</span>
-</a><a class="recommended-article-item" href="/2025/01/23/Redefine主题下的写作语法/" title="Redefine 主题下的写作语法" rel="bookmark">
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/01/23/Redefine主题下的写作语法/" title="Redefine 主题下的写作语法" rel="bookmark">
   <img src="/images/wallhaven-wqery6-light.webp" alt="Redefine 主题下的写作语法" class="!max-w-none">
   <span class="title">Redefine 主题下的写作语法</span>
 </a></div>
@@ -496,12 +457,12 @@
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
 			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/2025/01/23/hello-world/">
+				<a class="prev" rel="prev" href="/2025/01/23/Redefine%E4%B8%BB%E9%A2%98%E4%B8%8B%E7%9A%84%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95/">
 					<span class="left arrow-icon flex justify-center items-center">
 						<i class="fa-solid fa-chevron-left"></i>
 					</span>
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item">Hello World</span>
+						<span class="post-nav-title-item">Redefine 主题下的写作语法</span>
 						<span class="post-nav-item">Prev posts</span>
 					</span>
 				</a>
@@ -563,8 +524,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title">hexo 部署中遇到的一个坑</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95"><span class="nav-text">写作语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Html-Color-Codes"><span class="nav-text">Html Color Codes</span></a></li></ol></li></ol>
+		<div class="page-title">Hexo 字体修改</div>
+		
 
 	</div>
 </div>
@@ -593,7 +554,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        3 posts in total
+                        2 posts in total
                     </span>
                     
                 </p>
